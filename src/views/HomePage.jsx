@@ -29,8 +29,7 @@ const Homepage = () => {
   const [sendStatus, setSendStatus] = useState('Send Message')
   const [isDisabled, setIsDisabled] = useState(false)
 
-  const location = useLocation();
-
+  const location = useLocation()
   useEffect(() => {
     if (location.hash) {
       const element = document.querySelector(location.hash);
@@ -58,7 +57,7 @@ const Homepage = () => {
         <div className="absolute inset-0 bg-black opacity-50"></div>
         <div className="relative z-10 container mx-auto flex items-center justify-center h-full text-center px-4">
           <div>
-            <h1 className="text-5xl md:text-6xl font-bold leading-tight mb-4">
+            <h1 className="text-3xl md:text-5xl font-bold leading-tight mb-4 font-Sniglet">
               Welcome to Kasangati Greater Lions Club!
             </h1>
             <p className="text-lg mb-8">
@@ -139,7 +138,7 @@ const Homepage = () => {
       {/* Join Section */}
       <section id="join" className="py-40 text-white bg-sky-950 text-center bg-cover bg-no-repeat bg-center bg-blend-multiply" style={{ backgroundImage: `url(${image2})` }}>
         <div className="container mx-auto px-4">
-          <h2 className="text-4xl font-bold mb-6 underline my-5">Join the Team</h2>
+          <h2 className="text-4xl font-bold mb-6 underline my-5">Join The Team</h2>
           <p className="text-lg mb-12">Become a member of Kasangati Greater Lions Club today! Whether you want to play, support, or be a part of our community, we welcome you with open arms.</p>
           <Link
             to="/register"
