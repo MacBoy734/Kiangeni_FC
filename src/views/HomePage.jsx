@@ -1,5 +1,5 @@
-import React, { useState } from 'react';
-import { Link } from 'react-router-dom';
+import React, { useState, useEffect } from 'react';
+import { Link, useLocation } from 'react-router-dom';
 import image1 from '../assets/image_1.jpeg'
 import image2 from '../assets/image_2.jpeg'
 import image3 from '../assets/image_3.jpeg'
@@ -29,6 +29,16 @@ const Homepage = () => {
   const [sendStatus, setSendStatus] = useState('Send Message')
   const [isDisabled, setIsDisabled] = useState(false)
 
+  const location = useLocation();
+
+  useEffect(() => {
+    if (location.hash) {
+      const element = document.querySelector(location.hash);
+      if (element) {
+        element.scrollIntoView({ behavior: 'smooth' });
+      }
+    }
+  }, [location]);
   const handleCloseModal = () => {
     setName('')
     setEmail('')
@@ -41,7 +51,7 @@ const Homepage = () => {
     // send email logic here...
   }
   return (
-    <div className="font-poppins">
+    <div className="font-poppins mt-20">
 
       {/* Hero Section */}
       <section className="relative h-screen bg-blue-950 pt-2 text-white bg-cover bg-fixed bg-center bg-blend-multiply" style={{ backgroundImage: `url(${image1})` }}>
@@ -118,7 +128,7 @@ const Homepage = () => {
             {
               images.map((image, index) => (
                 <div key={index} className="bg-gray-200 rounded-lg overflow-hidden shadow-lg p-3">
-                  <img src={image} alt={`image_${index}`} className="w-full h-64 object-cover" />
+                  <img src={image} alt={`image_${index}`} className="w-full h-64 object-cover transform transition-transform duration-500 ease-in-out hover:scale-110" />
                 </div>
               ))
             }
@@ -158,7 +168,7 @@ const Homepage = () => {
 
 
       {isModalOpen && (
-        <div className="fixed inset-0 bg-gray-100 bg-opacity-25 flex items-center justify-center z-50">
+        <div className="fixed inset-0 bg-opacity-25 flex items-center justify-center z-50">
           <div className="bg-white p-6 rounded-lg shadow-lg w-full max-w-lg mx-auto">
             <form className="bg-white p-6 rounded-lg shadow-md w-full">
               <h2 className="text-xl font-bold mb-4 text-black font-lato">Send us an Email</h2>
@@ -204,13 +214,13 @@ const Homepage = () => {
                 ></textarea>
               </div>
 
-              <div className="flex justify-end mt-4 space-x-2">
+              <div className="flex justify-around mt-4 space-x-2">
                 <button className="px-4 py-2 bg-gray-400 text-white rounded hover:bg-gray-500" onClick={handleCloseModal}>Cancel</button>
                 <button
                   type="submit"
                   disabled={isDisabled}
                   onClick={handleSubmit}
-                  className={`${isDisabled ? 'opacity-75' : 'opacity-100'} w-full bg-teal-500 text-white p-2 rounded hover:bg-teal-600 transition`}
+                  className={`${isDisabled ? 'opacity-75' : 'opacity-100'}  bg-teal-500 text-white p-2 rounded hover:bg-teal-600 transition`}
                 >
                   {sendStatus}
                 </button>

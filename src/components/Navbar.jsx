@@ -1,21 +1,23 @@
 import React, { useState } from 'react';
+import { Link } from 'react-router-dom';
 
 const Navbar = () => {
   const [isMenuOpen, setIsMenuOpen] = useState(false);
 
+
   return (
-    <nav className="bg-gray-900 text-white shadow-lg">
+    <nav className="bg-gray-900 text-white shadow-lg py-2 z-50 fixed top-0 left-0 w-full h-auto">
       <div className="container mx-auto flex justify-between items-center p-4">
-        <a href="/" className="text-2xl font-bold text-yellow-500 hover:text-yellow-400">
+        <Link to="/" className="text-2xl font-bold text-yellow-500 hover:text-yellow-400">
           Kasangati Greater
-        </a>
+        </Link>
 
         {/* Desktop Menu */}
         <div className="hidden md:flex space-x-6">
-          <a href="#about" className="hover:text-yellow-500 transition duration-300">About</a>
-          <a href="#gallery" className="hover:text-yellow-500 transition duration-300">Gallery</a>
-          <a href="#join" className="hover:text-yellow-500 transition duration-300">Join</a>
-          <a href="#contact" className="hover:text-yellow-500 transition duration-300">Contact</a>
+          <Link to="/#about" className="hover:text-yellow-500 transition duration-300">About</Link>
+          <Link to="/#gallery" className="hover:text-yellow-500 transition duration-300">Gallery</Link>
+          <Link to="/#join" className="hover:text-yellow-500 transition duration-300">Join</Link>
+          <Link to="/#contact" className="hover:text-yellow-500 transition duration-300">Contact</Link>
         </div>
 
         {/* Mobile Menu Button */}

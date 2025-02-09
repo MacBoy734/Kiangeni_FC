@@ -16,7 +16,7 @@ const Login = () => {
 
 
   return (
-    <div className="py-20 bg-[whitesmoke] px-3">
+    <div className="py-20 bg-[whitesmoke] px-3 mt-20">
       <form
         className="bg-white p-6 rounded-lg shadow-md w-full max-w-md m-auto"
         onSubmit={handleSubmit}

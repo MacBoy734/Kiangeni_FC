@@ -15,7 +15,7 @@ const Register = () => {
   }
 
   return (
-    <div className='py-16 bg-[whitesmoke] px-3'>
+    <div className='py-16 bg-[whitesmoke] px-3 mt-20'>
       <form onSubmit={handleSubmit} className="bg-white p-6 rounded-lg shadow-md w-full max-w-md m-auto">
         <h2 className="text-xl font-bold mb-4 text-black font-lato">Register for an account.</h2>
         <div className="mb-4">
