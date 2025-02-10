@@ -58,7 +58,7 @@ const Homepage = () => {
         <div className="relative z-10 container mx-auto flex items-center justify-center h-full text-center px-4">
           <div>
             <h1 className="text-3xl md:text-5xl font-bold leading-tight mb-4 font-Sniglet">
-              Welcome to Kasangati Greater Lions Club!
+              Welcome To Kasangati Greater Lions Club!
             </h1>
             <p className="text-lg mb-8">
               Join the community, feel the vibe, and be a part of the serving club.

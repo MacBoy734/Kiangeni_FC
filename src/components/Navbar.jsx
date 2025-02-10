@@ -9,7 +9,7 @@ const Navbar = () => {
     <nav className="bg-gray-900 text-white shadow-lg py-2 z-50 fixed top-0 left-0 w-full h-auto">
       <div className="container mx-auto flex justify-between items-center p-4">
         <Link to="/" className="text-2xl font-bold text-yellow-500 hover:text-yellow-400">
-          Kasangati FC
+          Great Lions
         </Link>
 
         {/* Desktop Menu */}
