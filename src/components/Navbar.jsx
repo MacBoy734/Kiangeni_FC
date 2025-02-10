@@ -36,10 +36,10 @@ const Navbar = () => {
       {/* Mobile Menu */}
       <div className={`md:hidden ${isMenuOpen ? 'block' : 'hidden'}`}>
         <div className="bg-gray-800 text-white space-y-4 py-4">
-          <a href="#about" className="block text-center hover:text-yellow-500 transition duration-300">About</a>
-          <a href="#gallery" className="block text-center hover:text-yellow-500 transition duration-300">Gallery</a>
-          <a href="#join" className="block text-center hover:text-yellow-500 transition duration-300">Join</a>
-          <a href="#contact" className="block text-center hover:text-yellow-500 transition duration-300">Contact</a>
+        <Link to="/#about" className="hover:text-yellow-500 transition duration-300">About</Link>
+          <Link to="/#gallery" className="hover:text-yellow-500 transition duration-300">Gallery</Link>
+          <Link to="/#join" className="hover:text-yellow-500 transition duration-300">Join</Link>
+          <Link to="/#contact" className="hover:text-yellow-500 transition duration-300">Contact</Link>
         </div>
       </div>
     </nav>
