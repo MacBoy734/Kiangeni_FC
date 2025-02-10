@@ -1,5 +1,5 @@
 import { Link } from "react-router-dom";
-import { FaFacebook, FaGithub, FaInstagram, FaTelegram, FaTradeFederation, FaTrademark, FaWhatsapp, FaYoutube } from "react-icons/fa"
+import { FaFacebook, FaInstagram, FaTelegram, FaWhatsapp, FaYoutube } from "react-icons/fa"
 import { FaXTwitter } from "react-icons/fa6"
 
 const Footer = () => {
@@ -10,9 +10,9 @@ const Footer = () => {
           
           {/* Club Info */}
           <div>
-            <h2 className="text-2xl font-bold text-yellow-500">FC Kasangati Lions</h2>
+            <h2 className="text-2xl font-bold text-yellow-500"> Great Lions</h2>
             <p className="text-gray-400 mt-2">
-              The home of champions. Join us in making history on and off the pitch.
+              The mighty club. Join us in serving the greater good.
             </p>
           </div>
 
@@ -21,9 +21,9 @@ const Footer = () => {
             <h3 className="text-xl font-semibold text-yellow-500">Quick Links</h3>
             <ul className="mt-2 space-y-2 text-blue-700">
               <li><Link to="/" className="hover:text-yellow-400">Home</Link></li>
-              <li><Link to="/about" className="hover:text-yellow-400">About Us</Link></li>
-              <li><Link to="/matches" className="hover:text-yellow-400">Matches</Link></li>
-              <li><Link to="/contact" className="hover:text-yellow-400">Contact</Link></li>
+              <li><Link to="/#about" className="hover:text-yellow-400">About Us</Link></li>
+              <li><Link to="/Club Activities" className="hover:text-yellow-400">Club Activities</Link></li>
+              <li><a href="wa.me/+256 782 722571" className="hover:text-yellow-400">Contact</a></li>
             </ul>
           </div>
 
@@ -34,7 +34,7 @@ const Footer = () => {
               <a href="#" target="_blank" rel="noopener noreferrer" className="hover:text-yellow-400" title="Our WhatsApp">
                 <FaWhatsapp />
               </a>
-              <a href="#" target="_blank" rel="noopener noreferrer" className="hover:text-yellow-400" title="Our Facebook">
+              <a href="#" target="_wa.me/+256 774 922120" rel="noopener noreferrer" className="hover:text-yellow-400" title="Our Facebook">
                 <FaFacebook />
               </a>
               <a href="#" target="_blank" rel="noopener noreferrer" className="hover:text-yellow-400" title="Our Twitter">
@@ -56,7 +56,7 @@ const Footer = () => {
 
         {/* Copyright */}
         <div className="text-center text-gray-500 text-sm mt-10 border-t border-gray-700 pt-4">
-          &copy; {new Date().getFullYear()} FC Kasangati Greater Lions Club&trade;. All rights reserved.
+          &copy; {new Date().getFullYear()}  Kasangati Greater Lions Club;. All rights reserved.
         </div>
       </div>
     </footer>
