@@ -41,7 +41,7 @@ const Homepage = () => {
     <div className="font-poppins mt-20">
 
       {/* Hero Section */}
-      <section className="relative h-screen bg-blue-950 pt-2 text-white bg-cover bg-fixed bg-center bg-blend-multiply" style={{ backgroundImage: `url(${image1})` }}>
+      <section className="relative h-screen bg-blue-950 pt-2 text-white bg-cover bg-fixed bg-center bg-blend-multiply" style={{ backgroundImage: `url(${image7})` }}>
         <div className="absolute inset-0 bg-black opacity-50"></div>
         <div className="relative z-10 container mx-auto flex items-center justify-center h-full text-center px-4">
           <div>
