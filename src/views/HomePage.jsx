@@ -7,21 +7,9 @@ import image4 from '../assets/image_4.jpeg'
 import image5 from '../assets/image_5.jpeg'
 import image6 from '../assets/image_7.jpeg'
 import image7 from '../assets/image_7.jpeg'
-import image8 from '../assets/image_8.jpeg'
-import image9 from '../assets/image_9.jpeg'
-import image10 from '../assets/image_10.jpeg'
-import image11 from '../assets/image_11.jpeg'
-import image12 from '../assets/image_12.jpeg'
-import image13 from '../assets/image_13.jpeg'
-import image14 from '../assets/image_14.jpeg'
-import image15 from '../assets/image_15.jpeg'
-import image16 from '../assets/image_16.jpeg'
-import image17 from '../assets/image_17.jpeg'
-import image18 from '../assets/image_18.jpeg'
-import image19 from '../assets/image_19.jpeg'
 
 const Homepage = () => {
-  const images = [image1, image2, image3, image4, image5, image6, image7, image8, image9, image10, image11, image12, image13, image14, image15, image16, image17, image18, image19]
+  const images = [image1, image2, image3, image4, image5, image6, image7]
   const [isModalOpen, setIsModalOpen] = useState(false)
   const [name, setName] = useState('')
   const [email, setEmail] = useState('')
@@ -58,10 +46,10 @@ const Homepage = () => {
         <div className="relative z-10 container mx-auto flex items-center justify-center h-full text-center px-4">
           <div>
             <h1 className="text-3xl md:text-5xl font-bold leading-tight mb-4 font-Sniglet">
-              Welcome To Kasangati Greater Lions Club!
+              Welcome To Kiangeni FC!
             </h1>
             <p className="text-lg mb-8">
-              Join the community, feel the vibe, and be a part of the serving club.
+              The Home Of Football.
             </p>
             <a
               href="#join"
@@ -78,7 +66,7 @@ const Homepage = () => {
         <div className="container mx-auto px-4">
           <h2 className="text-4xl font-semibold text-gray-900 mb-8 underline">About Our Club</h2>
           <p className="text-lg mb-6 font-roboto">
-            Kasangati Greater Lions Club has been a proud part of the community for over three years. Our passion for service drives us to provide a platform where lions and community members can come together to serve those in need. With commitment to excellence, we’re always striving for greatness.
+            Kiangeni Fc Club has been a proud part of the community for over three years. Our passion for service drives us to provide a platform where lions and community members can come together to serve those in need. With commitment to excellence, we’re always striving for greatness.
           </p>
           <a
             href="#gallery"
@@ -92,7 +80,7 @@ const Homepage = () => {
       {/* Services Section */}
       <section id="services" className="py-40 bg-gray-800 bg-cover bg-fixed bg-center bg-blend-multiply text-white" style={{ backgroundImage: `url(${image5})` }}>
         <div className="container mx-auto px-4 text-center">
-          <h2 className="text-4xl font-bold mb-8 underline">Ways we serve</h2>
+          <h2 className="text-4xl font-bold mb-8 underline">Our Services</h2>
           <div className="grid grid-cols-1 md:grid-cols-3 gap-12">
             <div className="bg-white p-8 rounded-lg shadow-lg hover:shadow-xl transition duration-300">
               <h3 className="text-2xl font-semibold text-gray-800 mb-4">DIABETES</h3>
