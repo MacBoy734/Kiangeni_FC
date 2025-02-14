@@ -66,7 +66,7 @@ const Homepage = () => {
         <div className="container mx-auto px-4">
           <h2 className="text-4xl font-semibold text-gray-900 mb-8 underline">About Our Club</h2>
           <p className="text-lg mb-6 font-roboto">
-            Kiangeni Fc Club has been a proud part of the community for over three years. Our passion for service drives us to provide a platform where lions and community members can come together to serve those in need. With commitment to excellence, we’re always striving for greatness.
+            Kiangeni Fc has been a proud part of the community for over a decade. Our passion for football drives us to provide a platform where players and fans can come together to celebrate the game we love. With a commitment to excellence, we’re always striving for greatness both on and off the field. 
           </p>
           <a
             href="#gallery"
@@ -83,25 +83,25 @@ const Homepage = () => {
           <h2 className="text-4xl font-bold mb-8 underline">Our Services</h2>
           <div className="grid grid-cols-1 md:grid-cols-3 gap-12">
             <div className="bg-white p-8 rounded-lg shadow-lg hover:shadow-xl transition duration-300">
-              <h3 className="text-2xl font-semibold text-gray-800 mb-4">DIABETES</h3>
+              <h3 className="text-2xl font-semibold text-gray-800 mb-4">Coaching</h3>
               <p className="text-gray-600 mb-4">
-                We work to reduce the prevalence of diabetes and improve quality of life for those who live with diabetes. 
+                Get professional coaching to improve your skills, regardless of your experience level.
               </p>
               <a href="#join" className="text-yellow-600 hover:text-yellow-500">Learn More</a>
             </div>
             <div className="bg-white p-8 rounded-lg shadow-lg hover:shadow-xl transition duration-300">
-              <h3 className="text-2xl font-semibold text-gray-800 mb-4">CHILDHOOD CANCER</h3>
+              <h3 className="text-2xl font-semibold text-gray-800 mb-4">Match Tickets</h3>
               <p className="text-gray-600 mb-4">
-                We provide support for the needs of children and families affected childhood cancer.
+                We Book your tickets online for an exciting match experience at the stadium.
               </p>
-              <a href="#contact" className="text-yellow-600 hover:text-yellow-500">Learn More</a>
+              <a href="#contact" className="text-yellow-600 hover:text-yellow-500">Get Tickets</a>
             </div>
             <div className="bg-white p-8 rounded-lg shadow-lg hover:shadow-xl transition duration-300">
-              <h3 className="text-2xl font-semibold text-gray-800 mb-4">FUNDRAISING</h3>
+              <h3 className="text-2xl font-semibold text-gray-800 mb-4">Fan Merchandise</h3>
               <p className="text-gray-600 mb-4">
-                We are a non profitable organisation we always carry out fundraising and donations to those in need and also to run our service activities. .
+              Show your support with exclusive club merchandise, from jerseys to accessories.
               </p>
-              <a href="#join" className="text-yellow-600 hover:text-yellow-500">Donate</a>
+              <a href="#join" className="text-yellow-600 hover:text-yellow-500">Shop now</a>
             </div>
           </div>
         </div>
@@ -127,7 +127,7 @@ const Homepage = () => {
       <section id="join" className="py-40 text-white bg-sky-950 text-center bg-cover bg-no-repeat bg-center bg-blend-multiply" style={{ backgroundImage: `url(${image2})` }}>
         <div className="container mx-auto px-4">
           <h2 className="text-4xl font-bold mb-6 underline my-5">Join The Team</h2>
-          <p className="text-lg mb-12">Become a member of Kasangati Greater Lions Club today! Whether you want to serve, support, or be a part of our community, we welcome you with open arms.</p>
+          <p className="text-lg mb-12">Become a member of Kiangeni Football Club today! Whether you want to play, support, or be a part of our community, we welcome you with open arms.</p>
           <Link
             to="/register"
             className="px-8 py-3 text-xl font-semibold text-gray-900 bg-white hover:bg-gray-200 rounded-lg transition duration-300"

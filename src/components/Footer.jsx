@@ -23,7 +23,7 @@ const Footer = () => {
               <li><Link to="/" className="hover:text-yellow-400">Home</Link></li>
               <li><Link to="/#about" className="hover:text-yellow-400">About Us</Link></li>
               <li><Link to="/Club Activities" className="hover:text-yellow-400">Club Activities</Link></li>
-              <li><a href="wa.me/+256 782 722571" className="hover:text-yellow-400">Contact</a></li>
+              <li><a href="wa.me/+254790450348" className="hover:text-yellow-400">Contact</a></li>
             </ul>
           </div>
 
@@ -56,7 +56,7 @@ const Footer = () => {
 
         {/* Copyright */}
         <div className="text-center text-gray-500 text-sm mt-10 border-t border-gray-700 pt-4">
-          &copy; {new Date().getFullYear()}  Kasangati Greater Lions Club;. All rights reserved.
+          &copy; {new Date().getFullYear()}  Kiangeni FC. All rights reserved.
         </div>
       </div>
     </footer>
