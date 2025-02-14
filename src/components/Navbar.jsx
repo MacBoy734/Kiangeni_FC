@@ -16,6 +16,7 @@ const Navbar = () => {
         <div className="hidden md:flex space-x-6">
           <Link to="/#about" className="hover:text-yellow-500 transition duration-300">About</Link>
           <Link to="/#gallery" className="hover:text-yellow-500 transition duration-300">Gallery</Link>
+          <Link to="/#support-us" className="hover:text-yellow-500 transition duration-300">Support Us</Link>
           <Link to="/#join" className="hover:text-yellow-500 transition duration-300">Join</Link>
           <Link to="/#contact" className="hover:text-yellow-500 transition duration-300">Contact</Link>
         </div>
@@ -38,6 +39,7 @@ const Navbar = () => {
         <div className="bg-gray-800 text-white space-y-4 py-4 flex flex-col w-full pl-4">
         <Link to="/#about" className="hover:text-yellow-500 transition duration-300">About</Link>
           <Link to="/#gallery" className="hover:text-yellow-500 transition duration-300">Gallery</Link>
+          <Link to="/#support-us" className="hover:text-yellow-500 transition duration-300">Support Us</Link>
           <Link to="/#join" className="hover:text-yellow-500 transition duration-300">Join</Link>
           <Link to="/#contact" className="hover:text-yellow-500 transition duration-300">Contact</Link>
         </div>

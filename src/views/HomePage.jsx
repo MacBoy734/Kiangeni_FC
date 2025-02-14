@@ -1,5 +1,6 @@
 import React, { useState, useEffect } from 'react';
 import { Link, useLocation } from 'react-router-dom';
+import { FaHandsHelping, FaDonate, FaHandshake } from "react-icons/fa"
 import image1 from '../assets/image_1.jpeg'
 import image2 from '../assets/image_2.jpeg'
 import image3 from '../assets/image_3.jpeg'
@@ -66,7 +67,7 @@ const Homepage = () => {
         <div className="container mx-auto px-4">
           <h2 className="text-4xl font-semibold text-gray-900 mb-8 underline">About Our Club</h2>
           <p className="text-lg mb-6 font-roboto">
-            Kiangeni Fc has been a proud part of the community for over a decade. Our passion for football drives us to provide a platform where players and fans can come together to celebrate the game we love. With a commitment to excellence, we’re always striving for greatness both on and off the field. 
+            Kiangeni Fc has been a proud part of the community for over a decade. Our passion for football drives us to provide a platform where players and fans can come together to celebrate the game we love. With a commitment to excellence, we’re always striving for greatness both on and off the field.
           </p>
           <a
             href="#gallery"
@@ -99,7 +100,7 @@ const Homepage = () => {
             <div className="bg-white p-8 rounded-lg shadow-lg hover:shadow-xl transition duration-300">
               <h3 className="text-2xl font-semibold text-gray-800 mb-4">Fan Merchandise</h3>
               <p className="text-gray-600 mb-4">
-              Show your support with exclusive club merchandise, from jerseys to accessories.
+                Show your support with exclusive club merchandise, from jerseys to accessories.
               </p>
               <a href="#join" className="text-yellow-600 hover:text-yellow-500">Shop now</a>
             </div>
@@ -150,6 +151,57 @@ const Homepage = () => {
           >
             Send an Email
           </button>
+        </div>
+      </section>
+
+      <section className="bg-gray-900 text-white py-16 px-6" id='support-us'>
+        <div className="max-w-6xl mx-auto text-center">
+          <h2 className="text-3xl md:text-4xl font-bold mb-6 text-yellow-400">
+            Support Kiangeni FC
+          </h2>
+          <p className="text-lg text-gray-300 mb-8">
+            Help us grow and make a difference in our community. Your support
+            enables us to empower talents, organize events, and enhance our facilities.
+          </p>
+
+          {/* Support Options */}
+          <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
+            {/* Donate */}
+            <div className="bg-gray-800 p-6 rounded-lg shadow-lg hover:scale-105 transition duration-300">
+              <FaDonate className="text-4xl text-yellow-400 mx-auto mb-4" />
+              <h3 className="text-2xl font-semibold mb-2">Donate</h3>
+              <p className="text-gray-300">
+                Your contributions help fund our club's operations and activities.
+              </p>
+              <Link to="/#support-us" className="mt-4 inline-block bg-yellow-500 hover:bg-yellow-400 text-white px-6 py-2 rounded-lg transition">
+                Donate Now
+              </Link>
+            </div>
+
+            {/* Sponsor */}
+            <div className="bg-gray-800 p-6 rounded-lg shadow-lg hover:scale-105 transition duration-300">
+              <FaHandshake className="text-4xl text-yellow-400 mx-auto mb-4" />
+              <h3 className="text-2xl font-semibold mb-2">Become a Sponsor</h3>
+              <p className="text-gray-300">
+                Partner with us and gain visibility while supporting young talent.
+              </p>
+              <Link to="/#support-us" className="mt-4 inline-block bg-yellow-500 hover:bg-yellow-400 text-white px-6 py-2 rounded-lg transition">
+                Sponsor Us
+              </Link>
+            </div>
+
+            {/* Volunteer */}
+            <div className="bg-gray-800 p-6 rounded-lg shadow-lg hover:scale-105 transition duration-300">
+              <FaHandsHelping className="text-4xl text-yellow-400 mx-auto mb-4" />
+              <h3 className="text-2xl font-semibold mb-2">Volunteer</h3>
+              <p className="text-gray-300">
+                Get involved and help us organize events and training sessions.
+              </p>
+              <a href="/#join" className="mt-4 inline-block bg-yellow-500 hover:bg-yellow-400 text-white px-6 py-2 rounded-lg transition">
+                Join Us
+              </a>
+            </div>
+          </div>
         </div>
       </section>
 
